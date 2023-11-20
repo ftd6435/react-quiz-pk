@@ -55,6 +55,7 @@ body {
   padding: 2rem;
   background-color: #495057;
   border-radius: 100px;
+  margin-bottom: 2rem;
 }
 
 img {
@@ -153,6 +154,10 @@ progress {
   margin-bottom: 3.2rem;
 }
 
+.options p{
+  font-size: 1.4rem;
+}
+
 .btn-option {
   width: 100%;
   text-align: left;
@@ -193,6 +198,9 @@ progress {
   font-size: 1.8rem;
   text-align: center;
   margin-bottom: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .loader-container {

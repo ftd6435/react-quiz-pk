@@ -1,9 +1,5 @@
-import { useQuestions } from "../contexts/QuestionsContext";
-
-function Input()
+function Input({value, dispatch})
 {
-    const {userSetNumber: value, dispatch} = useQuestions();
-
     return(
         <>
         <h2>Welcome to The React Quiz!</h2>

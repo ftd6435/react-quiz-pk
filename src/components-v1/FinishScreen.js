@@ -1,8 +1,4 @@
-import { useQuestions } from "../contexts/QuestionsContext";
-
-function FinishScreen() {
-  const { points, maxPossiblePoints, highscore, dispatch, answerTab } = useQuestions();
-
+function FinishScreen({ points, maxPossiblePoints, highscore, dispatch, answerTab }) {
   const percentage = (points / maxPossiblePoints) * 100;
 
   let emoji;
@@ -19,8 +15,9 @@ function FinishScreen() {
     </p>
     <p className="highscore">
         (Highscore: {highscore} points)
-        <button className="btn btn-ui" onClick={() => dispatch({type: "restart"})}>Start Over</button>
     </p>
+
+    <button className="btn btn-ui" onClick={() => dispatch({type: "restart"})}>Start Over</button>
   
     <div className="options">
       {
